@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Navbar division-->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">Saran</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="docs.html">docs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Showcase-->
+    <section class="showcase">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1>Easier Deployment</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vitae impedit adipisci consequatur velit magni atque cum distinctio veritatis illum.</p>
+          <a href="features.html" class="btn btn-outline">Read More</a>
+        </div>
+        <div class="showcase-form card">
+          <h2>Request a Demo</h2>
+          <form>
+            <div class="form-control">
+              <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-control">
+              <input type="text" name="company" placeholder="company name" required>
+            </div>
+            <div class="form-control">
+              <input type="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <input type="submit" value="Send" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Stats  -->
+    <section class="stats">
+      <div class="container">
+        <h3 class="stats-heading text-center my-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rerum explicabo sit sapiente, architecto quam? Nesciunt delectus dolorum voluptatem a.
+        </h3>
+        <div class="grid grid-3 text-center my-4">
+          <div><i class="fas fa-server fa-3x"></i>
+          <h3>10,345,343</h3></div>
+          <p class="text-secondary">Deployments</p>
+          <div>
+            <i class="fas fa-upload fa-3x"></i>
+          <h3>9876 TB</h3></div>
+          <p class="text-secondary">Published</p>
+          </div>
+          <div>
+            <i class="fas fa-project-diagram fa-3x"></i>
+          <h3>2,345,343</h3></div>
+          <p class="text-secondary">Project</p>
+          </div>
+        </div> 
+      </div>
+    </section>
+  </body>
+</html>

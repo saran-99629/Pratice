@@ -1,0 +1,107 @@
+.navbar{
+    height: 60px;
+    background: linear-gradient(to bottom, rgb(219, 128, 42), red);
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 50px ;
+    
+}
+.navbar a{
+    font-size: 25px;
+    margin: 0px 10px;
+    color: whitesmoke;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+.logo{
+    height: 150px;
+    background: url('bg2.jpg') no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.loc{
+    padding: 10px;
+    position: relative;
+    left: 130px;
+}
+.container{
+    height: 500px;
+    width: 100vw;
+    
+
+}
+#contact{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+.about_con{
+    
+    color: white;
+    font-size: 25px;
+    width: 200px;
+}
+.about_con h3{
+    margin: 20px;
+    padding: 20px;
+}
+.contact_con{
+    color: white;
+    font-size: 25px;
+    display: inline;
+    flex-direction: column;
+    align-content:space-around;
+}
+
+.contact_con h3{
+    margin: 20px;
+    padding: 20px;
+}
+.contact_con p{
+    top: 10px;
+    right: 30px;
+}
+.mail1{
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+}
+.contact_tag{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.box{
+    width: 400px;
+    height: 500px;
+    margin : 50px 100px;
+    background: rgb(255, 0, 0);
+}
+.box1{
+    width: 200px;
+    height: 300px;
+    background: yellow;
+    margin: 20px 100px;
+}
+.box p{
+    color: rgb(141, 72, 72);
+   
+}

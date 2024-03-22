@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'popiins',sans-serif ;
+}
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.navbar-links{
+   
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a {
+    position: relative;
+    text-decoration: none;
+    color: #1d232c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-links a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.4s;
+    background:grey ;
+}
+.navbar-links a:hover::before{
+    text-decoration: underline;
+    transform: scale(1.1);
+    width: 100%;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+/* Sdie navbar */
+.side-navbar{
+    background-color:#1d232c ;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    left:-60%;
+    transition: 1s;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none1;
+    }
+    
+}

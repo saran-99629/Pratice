@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- LOGO -->
+    <div class="logo" style="background: url(paper1.jpg);">
+        <div class="logo-pic-out">
+            <div class="logo-pic">
+                <img class="logo-picture" src="logo.jpg" alt="">
+            </div>
+        </div>
+        <div class="logo-name">
+            <p class="scholl-name" style="color:red;">Daniel Matriculation Higher Secondary School </p>
+            <p class="scholl-area">Poonamalle,Chennai-600056</p>
+            <div class="school-btn2">
+                <button class="school-btn">
+                    <span class="circle">
+                        <span class="arrow"></span>
+                    </span>
+                    <span class="text">School Tour</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav-Bar -->
+    <div class="nav-bar">
+        <div class="nav-container-1">
+            <ul class="list">
+                <a class="nav-bar-links" href="#">Home</a>
+                <a class="nav-bar-links" href="#">About</a>
+                <a class="nav-bar-links" href="#">Contact</a>
+                <a class="nav-bar-links" href="#">Gallery</a>
+                <a class="nav-bar-links" href="#">Admission</a>
+                <a class="nav-bar-links" href="#">Campus Life</a>
+                <a class="nav-bar-links" href="#">Acadamics</a>
+                <a class="nav-bar-links" href="#">Events</a>
+                <a class="nav-bar-links" href="#">Alumni</a>
+            </ul>
+        </div>
+        <div class="navbar-menu-toggle">
+            <i style="color: white;" class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Image slider -->
+    <div class="container">
+        <div class="slide">
+            <!-- Your slide items go here -->
+        </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">Call</a></li>
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Visit</a></li>
+                        <li><a href="#">Results</a></li>
+                        <li><a href="#">Acadamics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">+91 9962927988</a></li>
+                        <li><a href="#">saran@gmail.com</a></li>
+                        <li><a href="#">saran@twitter.com</a></li>
+                        <li><a href="#">saran@facebook.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+
+        next.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+
+        prev.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1])
+        })
+    </script>
+</body>
+
+</html>
